@@ -35,7 +35,7 @@ cursor.execute("""CREATE TABLE IF NOT EXISTS Industry(
 cursor.execute("""TRUNCATE Stock""")
 cursor.execute("""TRUNCATE Industry""")
 
-df = pds.read_csv("./data_name_20180521.csv", dtype=str)
+df = pds.read_csv(args.file, dtype=str)
 df.drop("Unnamed: 39", axis=1, inplace=True)
 
 vmap = dict()
