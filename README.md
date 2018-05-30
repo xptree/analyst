@@ -8,3 +8,10 @@ conda install -c anaconda mysql-connector-python
 conda install -c anaconda pandas 
 conda install -c anaconda gensim 
 ```
+
+## Usage
+
+```
+python main.py --file=FILE --host=MySqlAddress --user=MysqlUser
+```
+
