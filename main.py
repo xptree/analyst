@@ -110,7 +110,6 @@ for k in vmap:
                 top_list.append(item[0].split('_', 1)[1])
                 if len(top_list) == args.topk:
                     break
-                    break
         param.append((k.split('_', 1)[1], ",".join(top_list)))
 cursor.executemany("INSERT INTO Stock VALUES(%s, %s)", param)
 
