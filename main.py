@@ -36,7 +36,7 @@ cursor.execute("""TRUNCATE Stock""")
 cursor.execute("""TRUNCATE Industry""")
 
 df = pds.read_csv(args.file, dtype=str)
-df.drop("Unnamed: 39", axis=1, inplace=True)
+#df.drop("Unnamed: 39", axis=1, inplace=True)
 
 vmap = dict()
 edge_list = list()
