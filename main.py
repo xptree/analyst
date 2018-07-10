@@ -74,7 +74,7 @@ def random_walk(g, start):
     stop = False
     while not stop:
         stop = yield current
-        current = random.choice(g.neighbors(current))
+        current = current if g.degree(current)==0 else random.choice(g.neighbors(current))
 
 def add_vertex(s):
     if s not in vmap:
